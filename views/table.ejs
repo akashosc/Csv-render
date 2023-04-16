@@ -1,0 +1,43 @@
+<div class="tablekls">
+            <!-- <section class="container cd-table-container"> -->
+                <h2 class="cd-title">Search Table Record:</h2>
+                <input type="text" class="cd-search table-filter" data-table="order-table" placeholder="Search by name" onkeyup="searchFunctionname()" id="search-d"/>
+                <table class="cd-table table" id="myTable">
+                <tbody>
+                  <% for(dat1 of data){%>
+                    <tr>
+                      <% for(dat2 of dat1){%>
+                           <td><%=dat2%></td>
+                      <%}%>
+                    </tr>
+                 <%}%>
+                  </tbody>
+                </table>
+              <!-- </section> -->
+        </div>
+             
+            </section>
+           <script>
+             const searchFunctionname=()=>{
+                let filter=document.getElementById('search-d').value.toUpperCase();
+                let myTable=document.getElementById('myTable');
+                let tr=myTable.getElementsByTagName('tr');
+
+                for(var i=0;i<tr.length;i++){
+                  let td=tr[i];
+                  if(td){
+                    let textvalue=td.textContent||td.innerHTML;
+                    if(textvalue.toUpperCase().indexOf(filter)>-1){
+                       tr[i].style.display="";
+                    }else{
+                      tr[i].style.display='none';
+                    }
+                   }
+                  } 
+                }
+             
+           </script>
+        </body>
+        </html>     
+       
+  

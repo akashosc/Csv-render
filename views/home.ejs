@@ -1,0 +1,13 @@
+<div class="all-doc">
+    <ul class="list-of-doc">
+   <%for(dat of data){%>
+      <li>
+         <h3 class="marg"><%=dat.file%></h3>
+         
+         <a href="/view/<%=dat._id%>" class="marg"><i class="fa fa-eye" aria-hidden="true"></i></a>
+         <a href="/delet/<%=dat._id%>"  class="marg"><i class="fa fa-trash-o"></i></a>
+      </li>
+   <%}%>
+    
+    </ul>
+</div>

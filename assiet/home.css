@@ -1,0 +1,117 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #F0F0F0;
+}
+.marg{
+    margin-right: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.input-section{
+    background-color: #3C486B;
+    padding: 2rem 5rem;
+    text-align: center;
+    color: #F0F0F0;
+}
+.form-for-csv{
+    display: flex;
+    justify-content: center;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    color: wheat;
+    margin-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: inline-block;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+.form-for-csv button{
+    background-color: #393646;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #F0F0F0;
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.all-doc{
+    color: #F0F0F0;
+    background-color: #F0F0F0;  
+}
+.all-doc ul li{
+    background-color: #3C486B;
+    
+    margin: 1rem;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-table-container{
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table designe */
+.cd-table-container{
+    background: #fff;
+    box-shadow: 1px 2px 26px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    max-width: 720px;
+  }
+  /* Table Design */
+  .cd-table{
+    width: 100%;
+    color: #666;
+    margin: 10px auto;
+    border-collapse: collapse;
+  }
+  
+  .cd-table tr,
+  .cd-table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .cd-table th{
+    background: #017721;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Search Box */
+  .cd-search{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Search Title */
+  .cd-title{
+    color: #666;
+    margin: 15px 0;
+  }
+
+/* table designe */

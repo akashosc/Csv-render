@@ -2,10 +2,11 @@ const express=require('express');
 const router=express.Router();
 const homeController=require('../controller/home_controller');
 const multer=require('multer');
+const path=require('path');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, './uplodes')
+      cb(null,path.join(__dirname,'../uplodes'))
     },
     filename: function (req, file, cb) {
       cb(null,Date.now()+file.originalname);

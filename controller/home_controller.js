@@ -11,7 +11,7 @@ module.exports.home=async (req,res)=>{
     });
 }
 module.exports.sendCsv=async (req,res)=>{
-    try{
+     
         
        const doc=new userCsv({
           file:req.file.filename,
@@ -19,13 +19,9 @@ module.exports.sendCsv=async (req,res)=>{
        doc.save();
 
     //   res.send({status:200,success:true,msg:'Uploaded document is fine'});
-    return res.redirect('/');
+    res.redirect('/');
 
-    }catch(err){
-        console.log(err);
-        // res.send({status:400,success:false,msg:err});
-       return res.redirect('/');
-    }
+    
 }
 module.exports.removeCsv=async (req,res)=>{
      const id=req.params.id;
